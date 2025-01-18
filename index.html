@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BurgerShop S.A</title>
+    <link rel="stylesheet" href="css/maqueta.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <style>
+    /* Estilos para el cuerpo de la página */
+    body {
+        background-image: url(image/fondo.jpg);
+    }
+    </style>
+</head>
+<body>
+<center>    
+<div id="contenedor"><br>
+    <div id="encabezado">
+        <table>
+            <td width="25%"><img width="100px" src="image/logo.jpeg"></td>
+            <td width="45%"><font color="BLACK"><h1>BurgerShop S.A</h1></font></td>
+            <td width="45%">
+                <img src="image/face.png">
+                <img src="image/inst.png">
+                <img src="image/wats.png">
+            </td>
+        </table>
+    </div><br>
+    <div id="menu"><br>
+    <ul id="button">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="./page/SobreNosotros.html">Sobre Nosotros</a></li>
+        <li><a href="./page/Servicios.html">Servicios</a></li>
+        <li><a href="./page/Productos.html">Productos</a></li>
+        <li><a href="./page/Contactenos.html">Contactenos</a></li>
+        <li><a href="./page/inicioSesion.html">Inicio Sesion</a></li>
+    </ul>
+    </div><br>
+    <div id="contenido">
+        <div id="productos">
+            
+            <div id="slider">
+                <div class="slide active">
+                    <img src="image/PolloBroaster.jpeg" alt="Slider Image 1">
+                </div>
+                <div class="slide">
+                    <img src="image/PerrroCaliente.jpeg" alt="Slider Image 2">
+                </div>
+                <div class="slide">
+                    <img src="image/Hamburguesa.jpeg" alt="Slider Image 3">
+                </div>
+                <div class="slide">
+                    <img src="image/Nachos.jpeg" alt="Slider Image 4">
+                </div>
+                <div id="prev" onclick="changeSlide(-1)">&#10094;</div>
+                <div id="next" onclick="changeSlide(1)">&#10095;</div>
+            </div>
+        </div>
+    </div><br>
+    <div id="pie">© 2024 BurgerShop S.A. Todos los derechos reservados.
+        Av. Libertador 1234, Ciudad Autónoma de Buenos Aires, Argentina
+        Teléfono: +54 11 1234-5678 | Correo electrónico: contacto@tuejemplo.com
+        Inicio | Sobre nosotros | Servicios | Blog | Contacto
+        Síguenos en Facebook | Twitter | LinkedIn | Instagram
+        Aviso legal | Política de privacidad | Términos y condiciones
+        Suscríbete a nuestro boletín: [co.cristiad@gmail.com]</div>
+</div>
+</center>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    const slides = document.getElementsByClassName("slide");
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 1500); // Cambia de imagen cada 3 segundos
+}
+
+function changeSlide(n) {
+    slideIndex += n - 1;
+    if (slideIndex < 0) {slideIndex = slides.length - 1;}
+    showSlides();
+}
+    </script>
+</body>
+</html>

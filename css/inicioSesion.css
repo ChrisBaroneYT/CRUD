@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Form Container */
+.form-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  box-sizing: border-box; /* Asegura que el padding y el border no aumenten el ancho total */
+}
+
+/* Form Title */
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form Inputs */
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: calc(100% - 24px); /* Ajuste del ancho para compensar el padding y el border */
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Asegura que el padding y el border no aumenten el ancho total */
+}
+
+/* Submit Button */
+.form-container button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.form-container button:hover {
+  background-color: #45a049;
+}
+
+/* Optional Toggle (for Login/Register switch) */
+.form-container .form-toggle {
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+}

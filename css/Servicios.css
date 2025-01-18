@@ -1,0 +1,49 @@
+/* Estilos generales para la sección de servicios */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.service {
+    flex: 1 1 300px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service h2 {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 15px;
+    margin: 0;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.service p {
+    padding: 20px;
+    margin: 0;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+    }
+    
+    .service {
+        flex: 1 1 100%;
+    }
+}

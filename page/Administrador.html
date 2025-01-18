@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="../css/Admin.css"> <!-- Asegúrate de vincular tu archivo CSS -->
+    <script src="../JavaScript/Admin.js" defer></script> <!-- Vincula tu archivo JS -->
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-container">
+            <h1 id="welcome-message">Welcome</h1>
+            <p><a href="index.html" onclick="sessionStorage.removeItem('username')">Logout</a></p> <!-- Enlace para cerrar sesión -->
+        </div>
+        <div id="menu">
+            <ul id="button">
+                <li><a href="./Create.html">Create</a></li>
+                <li><a href="../include/read.php">Read</a></li>
+                <li><a href="./Update.html">Update</a></li>
+                <li><a href="./Delete.html">Delete</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

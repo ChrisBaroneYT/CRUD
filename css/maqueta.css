@@ -1,0 +1,89 @@
+/* Variables CSS */
+:root {
+    --primary-color: #ff6600;
+    --secondary-color: #333;
+    --background-color: #f8f9fa;
+    --text-color: #333;
+    --hover-color: #cc5200;
+}
+
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../image/fondo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--text-color);
+}
+
+/* Contenedor Principal */
+#contenedor {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado */
+#encabezado h1 {
+    margin: 0;
+    font-size: 36px;
+    color: var(--text-color);
+}
+
+#encabezado img {
+    vertical-align: middle;
+}
+
+#encabezado td img {
+    margin: 0 10px;
+}
+
+/* Pie de Página */
+#pie {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#pie a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+#pie a:hover {
+    text-decoration: underline;
+}
+
+#pie input[type="email"] {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+}
+
+#pie input[type="email"]:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(255, 102, 0, 0.5);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    #equipo {
+        flex-direction: column;
+    }
+
+    .producto {
+        margin: 10px auto;
+        max-width: 90%;
+    }
+}

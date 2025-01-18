@@ -1,0 +1,139 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../image/fondo.jpg);
+    background-color: #f4f4f4;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilo del contenedor principal */
+#contenido {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+/* Estilo de los formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Estilo de las etiquetas del formulario */
+label {
+    font-size: 1em;
+    margin-bottom: 4px;
+    color: #333;
+}
+
+/* Estilo del checkbox */
+input[type="checkbox"] {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+/* Contenedor para el checkbox y su etiqueta */
+.checkbox-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+/* Estilo de las etiquetas con checkbox */
+.checkbox-label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Estilo del checkbox */
+.checkbox-label input[type="checkbox"] {
+    margin: 0;
+    margin-right: 8px; /* Espacio entre el checkbox y el texto */
+    width: auto; /* Evita que el checkbox tome todo el ancho */
+}
+
+/* Estilo para el texto del checkbox */
+.checkbox-label span {
+    font-size: 14px; /* Ajusta según sea necesario */
+}
+
+/* Estilo de los campos de entrada, selectores y áreas de texto */
+input, select, textarea {
+    margin-bottom: 12px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 0.9em;
+    transition: border-color 0.3s;
+}
+
+/* Estilo del campo de entrada en foco */
+input:focus, select:focus, textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Estilo del botón de envío del formulario */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    text-align: center;
+    display: inline-block;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilo del botón de regresar */
+.btn-regresar {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.btn-regresar:hover {
+    background-color: #0056b3;
+}
+
+/* Contenedor de botones y alineación */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre los botones */
+    align-items: center; /* Alinea verticalmente los botones */
+    margin-top: 20px;
+}
+
+.button-container .btn-regresar {
+    margin-left: auto; /* Empuja el botón de regreso a la derecha */
+}

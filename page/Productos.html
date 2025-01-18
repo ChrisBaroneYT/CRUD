@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BurgerShop S.A</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/maqueta.css">
+    <link rel="stylesheet" href="../css/slider.css">
+    <style>
+    /* Estilos para el cuerpo de la página */
+    body {
+        background-image: url(../image/fondo.jpg);
+    }
+    </style>
+</head>
+<body>
+<center>    
+<div id="contenedor"><br>
+    <div id="encabezado">
+        <table>
+            <td width="25%"><img width="100px" src="../image/logo.jpeg"></td>
+            <td width="45%"><font color="BLACK"><h1>BurgerShop S.A</h1></font></td>
+            <td width="45%">
+                <img src="../image/face.png">
+                <img src="../image/inst.png">
+                <img src="../image/wats.png">
+            </td>
+        </table>
+    </div><br>
+    <div id="menu"><br>
+    <ul id="button">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
+        <li><a href="Servicios.html">Servicios</a></li>
+        <li><a href="Productos.html">Productos</a></li>
+        <li><a href="Contactenos.html">Contactenos</a></li>
+        <li><a href="inicioSesion.html">Inicio Sesion</a></li>
+    </ul>
+    </div><br>
+    <div id="contenido">
+        <h2>Nuestros Productos</h2>
+        <div id="productos">
+            <div class="producto">
+                <img src="../image/Nachos.jpeg" alt="Producto 1">
+                <h3>Mexican Nachos</h3>
+                <p>Descripción del Producto 1. Este es un delicioso producto que te encantará.</p>
+            </div>
+            <div class="producto">
+                <img src="../image/Hamburguesa.jpeg" alt="Producto 2">
+                <h3>Hamburguesa</h3>
+                <p>Descripción del Producto 2. Este producto es increíblemente sabroso.</p>
+            </div>
+            <div class="producto">
+                <img src="../image/PerrroCaliente.jpeg" alt="Producto 3">
+                <h3>Perro Caliente</h3>
+                <p>Descripción del Producto 3. Este es un delicioso producto que te encantará.</p>
+            </div>
+            <div class="producto">
+                <img src="../image/PolloBroaster.jpeg" alt="Producto 4">
+                <h3>Pollo Broaster</h3>
+                <p>Descripción del Producto 4. Este producto es increíblemente sabroso.</p>
+            </div>
+            <div class="producto">
+                <img src="../image/Lasagna.jpeg" alt="Producto 5">
+                <h3>Lasagna</h3>
+                <p>Descripción del Producto 5. Este es un delicioso producto que te encantará.</p>
+            </div>
+            <div class="producto">
+                <img src="../image/Pizza.jpeg" alt="Producto 6">
+                <h3>Pizza</h3>
+                <p>Descripción del Producto 6. Este producto es increíblemente sabroso.</p>
+            </div>
+            <div id="slider">
+                <div class="slide active">
+                    <img src="../image/PolloBroaster.jpeg" alt="Slider Image 1">
+                </div>
+                <div class="slide">
+                    <img src="../image/PerrroCaliente.jpeg" alt="Slider Image 2">
+                </div>
+                <div class="slide">
+                    <img src="../image/Hamburguesa.jpeg" alt="Slider Image 3">
+                </div>
+                <div class="slide">
+                    <img src="../image/Nachos.jpeg" alt="Slider Image 3">
+                </div>
+                <!-- Añade más slides aquí si es necesario -->
+                <div id="prev" onclick="changeSlide(-1)">&#10094;</div>
+                <div id="next" onclick="changeSlide(1)">&#10095;</div>
+            </div>
+        </div>
+    </div><br>
+    <div id="pie">© 2024 BurgerShop S.A. Todos los derechos reservados.
+        Av. Libertador 1234, Ciudad Autónoma de Buenos Aires, Argentina
+        Teléfono: +54 11 1234-5678 | Correo electrónico: contacto@tuejemplo.com
+        Inicio | Sobre nosotros | Servicios | Blog | Contacto
+        Síguenos en Facebook | Twitter | LinkedIn | Instagram
+        Aviso legal | Política de privacidad | Términos y condiciones
+        Suscríbete a nuestro boletín: [co.cristiad@gmail.com]</div>
+</div>
+</center>
+<script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+        const slides = document.getElementsByClassName("slide");
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        slides[slideIndex-1].style.display = "block";  
+        setTimeout(showSlides, 1500); // Cambia de imagen cada 3 segundos
+    }
+    
+    function changeSlide(n) {
+        slideIndex += n - 1;
+        if (slideIndex < 0) {slideIndex = slides.length - 1;}
+        showSlides();
+    }
+        </script>
+</div>
+</center>
+</body>
+</html>

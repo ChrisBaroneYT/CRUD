@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/C.css">
+    <title>Formulario de Contacto</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div id="contenido">
+        <form method="post" action="../include/conexion.php">
+            <h2>Formulario de Contacto</h2>
+        
+            <label for="documento">Documento:</label>
+            <input type="text" id="documento" name="documento" required placeholder="Ingrese su Documento">
+        
+            <label for="Nombre">Nombre Completo:</label>
+            <input type="text" id="Nombre" name="Nombre" required placeholder="Ingrese su Nombre Completo">
+        
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required placeholder="Ingrese su correo electrónico">
+        
+            <label for="telefono">Número de Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su número de teléfono" required>
+        
+            <label for="fecha">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha" name="fecha">
+        
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero">
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="no_binario">No binario</option>
+                <option value="no_especificar">No especificar</option>
+                <option value="otro">Otro</option>
+            </select>
+        
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escriba su mensaje"></textarea>
+        
+            <div class="checkbox-container">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="TerminosYCondiciones" required>
+                    <span>Acepto los términos y condiciones</span>
+                </label>
+            </div>
+
+            <!-- Botón de Enviar -->
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <!-- Contenedor de botones fuera del formulario -->
+    <div class="button-container">
+        <!-- Botón de Regresar -->
+        <a href="Administrador.html" class="btn-regresar">Regresar</a>
+    </div>
+</body>
+</html>

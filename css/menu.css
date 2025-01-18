@@ -1,0 +1,27 @@
+/* menu.css */
+
+/* Estilos para el botón */
+#button {
+    padding: 0;
+}
+
+/* Estilos para los elementos de lista dentro del botón */
+#button li {
+    display: inline;
+}
+
+/* Estilos para los enlaces dentro del botón */
+#button li a {
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: cornsilk;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Estilos para los enlaces dentro del botón al pasar el cursor sobre ellos */
+#button li a:hover {
+    background-color: rgb(255, 0, 0);
+    color: rgb(238, 255, 0);
+}

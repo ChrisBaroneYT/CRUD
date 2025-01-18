@@ -1,0 +1,93 @@
+/* Estilos generales para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../image/fondo.jpg);
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del contenedor principal */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo del encabezado */
+h1 {
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Estilo de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Estilo de los enlaces en la tabla */
+.actions a {
+    text-decoration: none;
+    color: #007bff;
+    margin: 0 5px;
+}
+
+.actions a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo del botón de añadir nuevo usuario */
+.actions a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.actions a:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo del botón de regresar */
+.btn-regresar {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.btn-regresar:hover {
+    background-color: #007bff;
+    color: #fff;
+}

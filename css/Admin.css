@@ -1,0 +1,92 @@
+/* Reset de márgenes y relleno por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    background-image: url(../image/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+}
+
+/* Contenedor de bienvenida */
+.welcome-container {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Estilo del mensaje de bienvenida */
+#welcome-message {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Estilo del enlace de cierre de sesión */
+.welcome-container a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.welcome-container a:hover {
+    text-decoration: underline;
+}
+
+/* Menú de navegación */
+#menu {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    background-color: #555;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+#menu a:hover {
+    background-color: #777;
+    text-decoration: underline;
+}
+
+/* Estilo del botón de navegación */
+#button {
+    margin: 0;
+    padding: 0;
+}

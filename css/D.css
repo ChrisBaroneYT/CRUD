@@ -1,0 +1,93 @@
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../image/fondo.jpg);
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    
+    /* Usar flexbox para centrar el contenido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+}
+
+/* Contenedor principal */
+.container {
+    width: 80%;
+    max-width: 600px; /* Opcional: Establece un ancho máximo para el contenedor */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Estilo para los encabezados */
+h1 {
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Estilo del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre elementos del formulario */
+    align-items: center; /* Centra los elementos dentro del formulario */
+}
+
+/* Estilo de las etiquetas del formulario */
+label {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+/* Estilo de los campos de entrada, selectores y áreas de texto */
+input[type="text"], input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilo del botón de envío del formulario */
+input[type="submit"] {
+    background-color: #dc3545; /* Fondo rojo */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    text-align: center;
+    display: inline-block;
+}
+
+/* Efecto hover para el botón de envío */
+input[type="submit"]:hover {
+    background-color: #c82333; /* Color rojo más oscuro en hover */
+}
+
+/* Estilo del botón de regresar */
+.btn-regresar {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+/* Efecto hover para el botón de regresar */
+.btn-regresar:hover {
+    background-color: #0056b3; /* Color azul más oscuro en hover */
+}
